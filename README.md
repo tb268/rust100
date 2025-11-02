@@ -1,27 +1,36 @@
-# Rust 100日チャレンジ 🦀
+# Rust 100 Days Challenge 🦀
 
-Rustを100日間学習する記録
+A 100-day journey to learn Rust programming language.
 
-## 進捗 (3/100)
+## Progress (3/100)
 
-| Day | プロジェクト | 内容 | 学んだこと |
-|-----|------------|------|-----------|
-| 001 | [hello-rust](./001/hello-rust) | Hello World | 基本構文、cargo の使い方 |
-| 002 | [number](./002/number) | 数値計算 | 変数、型、標準入力 |
-| 003 | [fizzbuzz](./fizzbuzz_003) | FizzBuzz | 条件分岐、ループ |
+| Day | Project | Topic | What I Learned |
+|-----|---------|-------|----------------|
+| 001 | [hello-rust](./001/hello-rust) | Hello World | Basic syntax, cargo usage |
+| 002 | [number](./002/number) | Number operations | Variables, types, stdin |
+| 003 | [fizzbuzz](./fizzbuzz_003) | FizzBuzz | Conditionals, loops |
 
-## 目標
-- Rustの基礎を習得
-- 毎日コミット
-- 実践的なプロジェクトを作る
+## Goals
+- Master Rust fundamentals
+- Commit daily
+- Build practical projects
 
-## 環境
+## Environment
 - Rust: stable
 - OS: macOS
 
-## 実行方法
+## AI Usage Policy
 
-各プロジェクトのディレクトリに移動して実行：
+AI tools are used **only** for:
+- Hints and suggestions (like Copilot)
+- Environment setup and configuration
+- Documentation and README writing
+
+**All core code is written by hand without AI assistance.** This is a personal learning challenge to truly understand Rust fundamentals.
+
+## How to Run
+
+Navigate to each project directory and run:
 
 ```bash
 cd 001/hello-rust
