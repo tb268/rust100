@@ -7,14 +7,14 @@ enum Unit{
     Kg,
 }
 
-fn unit_set(unit: &Unit, number: f32 ){
+fn unit_set(unit: &Unit, number: &f32 ){
     match unit{
-        Unit::M=> println!("{} km",(number/1000.0)),
-        Unit::Km=>println!("{} m",(number*1000.0)),
-        Unit::C=>println!("{} F",(number*9.0/5.0+32.0)),
-        Unit::F=>println!("{} C",((number-32.0)*5.0/9.0)),
-        Unit::G=>println!("{} kg",(number/1000.0)),
-        Unit::Kg=>println!("{} g",(number*1000.0)),
+        Unit::M=> println!("{} km",((*number)/1000.0)),
+        Unit::Km=>println!("{} m",((*number)*1000.0)),
+        Unit::C=>println!("{} F",((*number)*9.0/5.0+32.0)),
+        Unit::F=>println!("{} C",(((*number)-32.0)*5.0/9.0)),
+        Unit::G=>println!("{} kg",((*number)/1000.0)),
+        Unit::Kg=>println!("{} g",((*number)*1000.0)),
     }
 }
 
@@ -52,7 +52,7 @@ impl Item<'_>{
                 return 0;
             }
         };
-        unit_set(&unit,num);
+        unit_set(&unit,&num);
         1
     }
 }
