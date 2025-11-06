@@ -33,7 +33,7 @@ fn main() {
     println!("計算します");
     let args=std::env::args().collect::<Vec<String>>();
 
-    let num_l: i32 = match args[1].to_string().parse::<i32>(){
+    let num_l: i32 = match args[1].parse::<i32>(){
         Ok(num)=>{
             num
         },
