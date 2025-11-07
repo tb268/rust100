@@ -14,26 +14,15 @@ fn timer(time:i32 ){
 
     }
     println!("\n待機終了");
-    return;;
+    return;
 }
 
 fn stopwatch(){
-    let STOP_TIME:u64  =10;
     println!("ストップウォッチ開始！(停止の場合には、enterキーを入力してください)");
-    let mut now= Instant::now();
+    let now: Instant= Instant::now();
 
-    loop{
-        let elapsed = now.elapsed();
-        let secs = elapsed.as_secs();
-
-        if secs >= STOP_TIME{
-            break;
-        }
-        print!("\r残り{}秒",time-i);
-        io::stdout().flush().expect("msg");
-
-        
-    }
+    let mut i: String=String::new();
+    let _ = std::io::stdin().read_line(&mut i);
     
     let era = now.elapsed();
     println!("測定時間は{:?}でした",era);
