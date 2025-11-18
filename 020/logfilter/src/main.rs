@@ -1,3 +1,4 @@
+//cargo run -- --file ./application.log --keyword ERROR 
 use std::{
     fs::File,
     io::{self, BufRead, BufReader},
